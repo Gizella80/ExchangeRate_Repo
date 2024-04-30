@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<table th:if = "${ratesdto} != null">
+			<tr th:each="ratesdto : ${ratesdto.getRatesDtoList()}" >
+					
+						<td th:text="${ratesdto.getUnit()}"></td>
+						<td th:text="${ratesdto.getName()}"></td>
+						<td th:text="${ratesdto.getValue()}"></td>
+						
+		</table>
+						
+	
+	</body>
+</html>
